@@ -1,0 +1,83 @@
+/* =====================================================
+   css/auth.css — Trang Dang nhap / Dang ky
+   Nen gradient + the noi giua man hinh
+   ===================================================== */
+.auth-body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 28px 16px;
+    background:
+        radial-gradient(700px 340px at 50% -60px, rgba(2, 132, 199, .22), transparent),
+        linear-gradient(180deg, #e0f2fe 0%, #eef3f7 55%, #eef3f7 100%);
+}
+.auth-wrap { width: 100%; max-width: 460px; }
+.auth-wrap.wide { max-width: 620px; }
+.auth-brand-top { text-align: center; margin-bottom: 16px; }
+.auth-brand-top .logo-big {
+    width: 62px; height: 62px;
+    margin: 0 auto 8px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    display: flex; align-items: center; justify-content: center;
+    font-size: 29px;
+    box-shadow: var(--shadow-lg);
+}
+.auth-brand-top b { font-size: 17px; letter-spacing: .08em; color: var(--primary-dark); }
+.auth-brand-top p { color: var(--muted); font-size: 13px; }
+.auth-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: var(--shadow-lg);
+    padding: 30px 30px 24px;
+}
+.auth-card h2 { text-align: center; font-size: 23px; margin-bottom: 3px; color: var(--primary-dark); }
+.auth-sub { text-align: center; color: var(--muted); font-size: 13.5px; margin-bottom: 18px; }
+.auth-card .form-group { margin-bottom: 13px; }
+.auth-card button[type="submit"] { width: 100%; padding: 11px; font-size: 15px; margin-top: 6px; }
+.auth-link { text-align: center; font-size: 14px; margin-top: 15px; color: var(--muted); }
+.auth-link a { font-weight: 700; text-decoration: none; }
+.auth-link a:hover { text-decoration: underline; }
+.auth-grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.auth-hr { margin: 16px 0; border: none; border-top: 1px dashed var(--border); }
+.auth-note {
+    background: var(--primary-soft);
+    color: var(--primary-dark);
+    border-radius: 9px;
+    font-size: 13px;
+    padding: 9px 13px;
+    margin-bottom: 14px;
+}
+
+/* O mat khau co nut hien / an */
+.pass-wrap { position: relative; }
+.pass-wrap input { padding-right: 42px; }
+.pass-toggle {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 32px; height: 32px;
+    border-radius: 8px;
+    color: var(--muted);
+}
+.pass-toggle:hover { background: var(--primary-soft); }
+
+/* Goi y kiem tra username truc tiep */
+.field-hint { font-size: 12.5px; margin-top: 4px; color: var(--muted); }
+.field-hint.ok { color: var(--success); font-weight: bold; }
+.field-hint.bad { color: var(--danger); font-weight: bold; }
+.field-hint.check { color: var(--primary); }
+input.input-ok { border-color: var(--success); }
+input.input-bad { border-color: var(--danger); }
+
+@media (max-width: 560px) {
+    .auth-card { padding: 24px 18px 20px; }
+    .auth-grid2 { grid-template-columns: 1fr; }
+}

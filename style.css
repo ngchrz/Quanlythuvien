@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+}
+
+.home-1 {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    margin-bottom: 40px;
+    background: linear-gradient(135deg, #3f9fff, #2563eb);
+    color: white;
+    padding: 28px 50px;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.2);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 800px;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.login a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+/* Login */
+.login1 a {
+    padding: 10px 20px;
+    color: #7fa3ff;
+    border: 2px solid #fdfdff;
+    border-radius: 14px;
+}
+
+.login1 a:hover {
+    color: white;
+    background: #81adff;
+}
+
+
+/* Sigup */
+.signup a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 20px;
+    border-radius: 14px;
+
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    text-decoration: none;
+    color: white;
+
+}
+
+.signup a:hover {
+    transform: translateY(-1px);
+
+    background: rgba(255, 255, 255, 0.3);
+
+    box-shadow:
+        inset 0 1px 2px rgba(255, 255, 255, 0.5),
+        0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.header h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    opacity: 0.9;
+    font-size: 15px;
+}

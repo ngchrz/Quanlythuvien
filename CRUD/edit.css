@@ -1,0 +1,206 @@
+h2 {
+    text-align: center;
+    margin: 40px 0 25px;
+    color: #1e3a8a;
+    font-size: 28px;
+}
+
+/* ========================= FORM ========================= */
+form {
+    width: 820px;
+    max-width: calc(100% - 30px);
+    margin: 0 auto 50px;
+    background: white;
+    padding: 30px 35px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.box-2 input[type="file"] {
+    width: 100%;
+    padding: 10px;
+
+    border-radius: 14px;
+    background: #f8fafc;
+    font-size: 14px;
+    color: #64748b;
+    cursor: pointer;
+}
+
+/* Nút "Chọn tệp" */
+.box-2 input[type="file"]::file-selector-button {
+    padding: 10px 20px;
+    color: #356eff;
+    border: 2px solid #fdfdff;
+    border-radius: 14px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.error {
+    width: fit-content;
+    background: #ffabab;
+    color: rgb(255, 0, 0);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.box-2 input[type="file"]::file-selector-button:hover {
+    color: white;
+    background: #81adff;
+}
+
+#uploadMessage {
+    margin-top: 10px;
+    padding: 9px 12px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.upload-error {
+    color: #dc2626;
+    background: #fee2e2;
+    border: 1px solid #fecaca;
+}
+
+.upload-success {
+    color: #16a34a;
+    background: #dcfce7;
+    border: 1px solid #bbf7d0;
+}
+
+.boxAll {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* Thông tin sách bên trái */
+.box-1 {
+    flex: 5;
+}
+
+/* Ảnh bên phải */
+.box-2 {
+    flex: 5;
+}
+
+/* ========================= FORM GROUP ========================= */
+form>div {
+    margin-bottom: 18px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #374151;
+}
+
+/* ========================= INPUT ========================= */
+form input[type="text"],
+form input[type="file"] {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.25s;
+    background: #fff;
+}
+
+form input[type="text"]:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* ========================= FILE INPUT ========================= */
+form input[type="file"] {
+    padding: 10px;
+    cursor: pointer;
+    background: #f9fafb;
+}
+
+form input[type="file"]:hover {
+    border-color: #2563eb;
+}
+
+/* ========================= IMAGE PREVIEW ========================= */
+#preview {
+    display: block;
+    height: auto;
+    object-fit: cover;
+    margin: 12px auto 0;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* ========================= BUTTON ========================= */
+button[type="submit"] {
+    border: none;
+    background: #2563eb;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s;
+    margin-right: 8px;
+}
+
+button[type="submit"]:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 12px rgba(37, 99, 235, 0.25);
+}
+
+
+/* ========================= QUAY LẠI ========================= */
+.return {
+    background-color: #81adff;
+    padding: 10px 20px;
+    color: #ffffff;
+    border: 2px solid #559fff;
+    border-radius: 10px;
+    transition: 0.25s;
+    text-decoration: none;
+}
+
+.return:hover {
+    color: rgb(0, 115, 255);
+    background-color: white;
+}
+
+/* ========================= RESPONSIVE ========================= */
+@media (max-width: 700px) {
+    .header {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .header-content h1 {
+        font-size: 20px;
+    }
+
+    .login {
+        justify-content: center;
+    }
+
+    form {
+        padding: 25px 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
