@@ -143,7 +143,7 @@ include __DIR__ . '/partials/top.php';
 
 <div class="duo-panels">
     <div class="panel">
-        <h3>✨ Sách mới thêm</h3>
+        <h3>✨ Sách mới</h3>
         <table class="tbl">
             <thead><tr><th>Mã</th><th>Tên sách</th><th>Tác giả</th></tr></thead>
             <tbody>
