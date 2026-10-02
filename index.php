@@ -88,7 +88,7 @@ include __DIR__ . '/partials/top.php';
 </div>
 
 <div class="panel">
-    <h3>📊 Phiếu mượn gần đây</h3>
+    <h3>📊 Phiếu mượn</h3>
 
     <!-- Bộ lọc trạng thái -->
     <div class="filter-row">
